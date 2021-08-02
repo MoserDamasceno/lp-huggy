@@ -19,9 +19,24 @@
   <header class='container' id='header'>
     <div class='grid-container'>
       <div class='grid'>
+        
         <div class='col'>
           <div class="logo">
-            <img src="./dist/images/carbon-offset-logo.png" alt="Carbon Offset Logo">
+            <img src="./dist/images/logo-menu.png" alt="Instagram meu negócio Logo">
+          </div>
+        </div>
+        
+        <div class="col">
+          <ul class="menu-principal">
+            <li><a href="#">Sobre o evento</a></li>
+            <li><a href="#">Especialistas</a></li>
+            <li><a href="#">Programação</a></li>
+            <li><a href="#">Indique e ganhe prêmios</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="cta-menu">
+            <a href="#cadastrar">Libere seu acesso grátis</a>
           </div>
         </div>
       </div>
@@ -29,80 +44,560 @@
   </header>
   
   <main>
-    <section class="container" id="clients">
+    
+    <!-- Banner -->
+    <section class="container" id="banner">
       <div class="grid-container">
         <div class="grid">
-          <div class="col title">
-            <div class="line"></div>
-            <h2>Trusted by businesses worldwide</h2>
-            <div class="line"></div>
+          
+          <div class="col">
+            <div class="conteudo-esquerda">
+              <div class="logo-instagram">
+                <img src="./dist/images/logo-banner.png" alt="Instagram meu negócio">
+              </div>
+              <h1>Descubra como trazer mais resultado <br/>para sua empresa com o Instagram</h1>
+              <p>de <b>23 a 27 de agosto</b>, às 20h</p>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="conteudo-direita">
+              
+            <div class="formulario-banner" id="cadastrar">
+              <h2>Evento online e <br/>totalmente gratuito</h2>
+              <form action="#">
+                <div class="field">
+                  <input type="text" name="nome" id="nome" placeholder="Nome" required pattern="\S+.*"/>
+                </div>
+                
+                <div class="field">
+                  <input type="email" name="email" id="email" placeholder="Email" required pattern="\S+.*"/>
+                </div>
+                
+                <div class="field half">
+                  <input type="text" name="empresa" id="empresa" placeholder="Empresa" required>
+                  <input type="text" name="cargo" id="cargo" placeholder="Cargo" required>
+                </div>
+                
+                <div class="field half">
+                  <select name="funcionarios" id="funcionarios" required>
+                    <option value>Qtde de funcionários</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <select name="segmento" id="segmento" required>
+                    <option value>Segmento</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                
+                <div class="field">
+                  <div class="termos">
+                    <input type="checkbox" name="termos" id="termos" required>
+                    <label for="termos">Eu li e concordo com os <a href="#">termos de uso</a></label>
+                  </div>
+                </div>
+                
+                <div class="botao">
+                  <button>Libere seu acesso grátis</button>
+                </div>
+              </form>
+              
+              <div class="contador">
+                <p>Inscrições até: 00:00:00</p>
+              </div>
+            </div>
+          
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid">
+          <div class="col">
+            <div class="logo-huggy">
+              <img src="./dist/images/logo-huggy.png" alt="Huggy">
+            </div>
+            
           </div>
         </div>
       </div>
     </section>
     
-    </main>
-    
-    <footer class="container" id="footer">
+    <!-- Relacionamento -->
+    <section id="relacionamento" class="container">
       <div class="grid-container">
         <div class="grid">
           <div class="col">
-            <div class="bigText">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>CONHEÇA MELHOR O INSTAGRAM E AUMENTE AS POSSIBILIDADES DE <br/>RELACIONAMENTO COM SEUS CLIENTES </h2>
+          </div>
+        </div>
+        
+        <div class="grid mockup">
+          <div class="col">
+            <img src="./dist/images/img-conheca-melhor-instagram.png" alt="mockup">
+          </div>
+          <div class="col">
+            <p>O Instagram No Meu Negócio é um evento desenvolvido para ajudar pequenas e médias empresas a utilizarem o Instagram como oportunidade de geração de negócios e interação com seus públicos de interesse.</p>
+          </div>
+        </div>
+        
+        <div class="grid numeros">
+          <div class="col">
+            <p>Aqui é o lugar certo para pensar estratégias de maneira prática sobre como destacar seu negócio em uma das redes sociais que mais cresce no Brasil.</p>
+          </div>
+          <div class="col">
+            <div class="numeros-interna">
+              <div class="num">
+                <p>
+                  <span>100%</span>
+                  ONLINE E GRATUITO
+                </p>
+              </div>
+              
+              <div class="num">
+                <p>
+                  <span>05</span>
+                  KEYNOTES
+                </p>
+              </div>
+              
+              <div class="num">
+                <p>
+                  <span>+10</span>
+                  MATERIAIS EDUCATIVOS
+                </p>
+              </div>
             </div>
-            <div class="social-links">
-              <div class="icon">
-                <a target="_blank" rel="noreferrer">
-                  <img src="./dist/images/instagram.png" alt=""/>
-                </a>
-              </div>
-              <div class="icon">
-                <a target="_blank" rel="noreferrer">
-                  <img src="./dist/images/facebook.png" alt=""/>
-                </a>
-              </div>
-              <div class="icon">
-                <a target="_blank" rel="noreferrer">
-                  <img src="./dist/images/twitter.png" alt=""/>
-                </a>
-              </div>
-              <div class="icon">
-                <a target="_blank" rel="noreferrer">
-                  <img src="./dist/images/pinterest.png" alt=""/>
-                </a>
-              </div>
-              <div class="icon">
-                <a target="_blank" rel="noreferrer">
-                  <img src="./dist/images/tumbler.png" alt=""/>
-                </a>
+
+          </div>
+        </div>
+        
+        <div class="grid cta">
+          <div class="col">
+            <h3>NÃO FIQUE DE FORA!</h3>
+            <p>De 23 a 27 de agosto, sempre às 20h, vamos ensinar a você o passo a passo
+              para colocar o Instagram da sua empresa no próximo nível.</p>
+              <div class="botao">
+                <a href="#cadastrar">LIBERAR MEU ACESSO GRATUITO</a>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="smallText">
-              <p>First page
-                <br>
-                Second page
-                <br>
-                Third page
-                <br>
-                Fourth page
-              </p>
+          
+        </div>
+      </section>
+      
+      <section id="conteudo" class="container">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h2>Conteúdo completo sobre instagram, <br/>de maneira prática e rápida</h2>
             </div>
           </div>
-          <div class="col">
-            <div class="smallText">
-              <p>Example Street
-                <br>
-                City Name, Something
-                <br>
-                (123) 456-7890
-              </p>
+
+          <div class="grid">
+            <div class="col">
+              <ul>
+                <li>
+                  <h3>Aulas direto ao ponto</h3>
+                  <p>Tenha acesso a 05 aulas rápidas, <br/>dinâmicas e que vão direto ao ponto.</p>
+                </li>
+
+                <li>
+                  <h3>Conteúdo de ponta a ponta sobre o Instagram</h3>
+                  <p>Informações do nível básico ao mais avançado <br/>para empresas que querem crescer.</p>
+                </li>
+
+                <li>
+                  <h3>Participação de especialistas</h3>
+                  <p>Conte com especialistas convidados para <br/>alavancar o seu conhecimento sobre Instagram. </p>
+                </li>
+
+                <li>
+                  <h3>Materiais complementares</h3>
+                  <p>Receba conteúdos complementares e <br/>exclusivos ao decorrer do evento.</p>
+                </li>
+
+                <li>
+                  <h3>Táticas e ferramentas para destacar o seu negócio</h3>
+                  <p>Receba conteúdos complementares e <br/>exclusivos ao decorrer do evento.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <img src="./dist/images/mockup-conteudo-melhor-pratica.png" alt="mockup">
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Palestrantes -->
+      <section id="palestrantes" class="container">
+        <div class="grid-container">
+
+          <!-- Linha Palestrante com título da seção-->
+          <div class="grid">
+            <div class="col">
+              <h2>QUEM VAI <br/>TE AJUDAR <br/>NESTA <br/>TRILHA</h2>
+            </div>
+            <div class="col"><img src="./dist/images/roberson.jpg"></div>
+            <div class="col">
+              <h3>Roberson Pinheiro</h3>
+              <span class="cargo">CGO</span>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um alcoolatra.</p>
+            </div>
+          </div>
+
+          <!-- Linha Palestrante -->
+          <div class="grid">
+            <div class="col">
+              <h3>Diego Freire</h3>
+              <span class="cargo">CEO</span>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um.</p>
+            </div>
+            <div class="col"><img src="./dist/images/diego.jpg"></div>
+            <div class="col"></div>
+          </div>
+
+          <!-- Linha Palestrante -->
+          <div class="grid">
+            <div class="col"></div>
+            <div class="col"><img src="./dist/images/convidado.png"></div>
+            <div class="col">
+              <h3>Victor Hugo</h3>
+              <span class="cargo">Especialista em conversas</span>
+              <p>Especialista em canais digitais, com foco em conversas estratégicas que potencializam a jornada de relacionamento entre negócios e seus clientes. Apaixonado por comunicação e mais de 10 anos de experiência em relacionamento com clientes.</p>
+            </div>
+          </div>
+
+          <!-- Linha Palestrante -->
+          <div class="grid">
+            <div class="col">
+              <h3>Convidado</h3>
+              <span class="cargo">Lorem</span>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um.</p>
+            </div>
+            <div class="col"><img src="./dist/images/convidado.png"></div>
+            <div class="col"></div>
+          </div>
+
+          <!-- Linha Palestrante -->
+          <div class="grid">
+            <div class="col"></div>
+            <div class="col"><img src="./dist/images/convidado.png"></div>
+            <div class="col">
+              <h3>Convidado</h3>
+              <span class="cargo">Lorem</span>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um alcoolatra.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      <!-- CTA -->
+      <section id="cta-amarela" class="container">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h2>A OPORTUNIDADE PARA DESTACAR <b>SEU NEGÓCIO</b></h2>
+            </div>
+            <div class="col">
+              <p>Você vai aprender como fazer do atendimento no Instagram um meio para ajudar seu negócio a crescer.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col">
+              <div class="botao">
+                <a href="#cadastro">GARANTA SUA VAGA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programação -->
+      <section id="programacao" class="container">
+        <div class="bg-shape">
+          <div class="shape-01"></div>
+          <div class="shape-02"></div>
+        </div>
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h2> PROGRAMAÇÃO</h2>
+              <ul>
+                <li>
+                  <span>23/08</span>
+                  <div>
+                    <h3>NEGÓCIO</h3>
+                    <p>Seu Instagram como uma máquina de oportunidades</p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>24/08</span>
+                  <div>
+                    <h3>CONTEÚDO</h3>
+                    <p>Construindo um audiência engajada</p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>25/08</span>
+                  <div>
+                    <h3>IMPULSIONAMENTO</h3>
+                    <p>Estratégia de mídia paga vs alcance orgânico</p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>26/08</span>
+                  <div>
+                    <h3>ATENDIMENTO</h3>
+                    <p>Como criar conversas que convertem</p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>27/08</span>
+                  <div>
+                    <h3>OUTRAS REDES</h3>
+                    <p>Como integrar Instagram, WhatsApp, Facebook e outras redes</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Público alvo -->
+      <section id="publico-alvo" class="container">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h2>ESSE EVENTO É PARA VOCÊ QUE… </h2>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>Tem uma micro, pequena <br/>ou média empresa </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>Possui loja virtual ou faz do <br/>Instagram sua vitrine</p>
+                </div>
+              </div>
+            </div> 
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>É profissional da área <br/>de marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>Trabalha com <br/>atendimento digital </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>Deseja potencializar estratégias <br/>nas redes sociais</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="inner-box">
+                  <p>Quer conhecer melhor um dos <br/>maiores apps do mundo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimento -->
+      <section id="depoimento" class="container">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h3>"Não somos mais um app de compartilhamento de fotos ou um app de compartilhamento de fotos quadradas"</h3>
+              <p>Adam Mosseri, Chefe do Instagram, sobre a rede social passar a destacar conteúdos em vídeo.</p>
+            </div>
+            <div class="col">
+              <img src="./dist/images/img-adam.png" alt="Depoimento">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta-comece-agora" class="container">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="col">
+              <h2>ESTÁ NA HORA DE ESTRATÉGIAS MAIS <br/>INTERESSANTES NO SEU PERFIL!</h2>
+              <div class="botao">
+                <a href="#cadastro">Comece agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Indicação -->
+      <section id="indicacao" class="container">
+        <div class="grid-container">
+          <div class="grid titulo">
+            <div class="col">
+              <h2>INDIQUE AMIGOS E GANHE PRÊMIOS EXCLUSIVOS</h2>
+              <p>Logo após confirmar sua inscrição você terá acesso a um link específico para <br/>compartilhar com seus amigos. Quanto mais pessoas se inscreverem com o seu link, melhores serão os seus prêmios.</p>
+            </div>
+          </div>
+
+          <div class="grid lista">
+            <div class="col">
+              <img src="./dist/images/img-indique.png" alt="Indique">
+            </div>
+            <div class="col">
+              <h3>Confira o que você pode ganhar</h3>
+              <ul>
+                <li>
+                  <h4><span>03 amigos <br/>indicados</span></h4>
+                  <p>Acesso gratuito aos conteúdos Instagram No Meu Negócio por 30 dias</p>
+                </li>
+                <li>
+                  <h4><span>05 amigos <br/>indicados</span></h4>
+                  <p>Master Class Online Alavancando Vendas No Instagram</p>
+                </li>
+                <li>
+                  <h4><span>10 amigos <br/>indicados</span></h4>
+                  <p>Acesso free a plataforma de atendimento digital Huggy por 02 meses
+                    <small>*Disponível para os 50 primeiros que atingirem os 10 amigos inscritos</small>
+                  </p>  
+                </li>
+                <li>
+                  <h4><span>20 amigos <br/>indicados</span></h4>
+                  <p>Análise Premium do Perfil de Instagram da sua empresa
+                  <small>*Disponível para os 25 primeiros que atingirem os 20 amigos inscritos</small>
+                </p>
+                </li>
+                <li>
+                  <h4><span>Para os 03 que <br/>mais indicarem</span></h4>
+                  <p>Mentoria Online com Especialista sobre estratégias para o Instagram</p>
+                </li>
+              </ul>
+              <div class="botao">
+                <a href="#">Quero meu link exclusivo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="container" id="footer">
+
+      <div class="grid-container">
+        <div class="grid">
+          <div class="col">
+            <h2>INSCREVA-SE AGORA MESMO E LIBERE SEU ACESSO AO</h2>
+            <div class="logo">
+              <img src="./dist/images/logo-banner.png" alt="Instagram meu negócio Logo">
+            </div>
+
+            <form action="#">
+              <div class="fields">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+           
+                <input type="text" name="email" id="email" placeholder="Email">
+             
+                <input type="text" name="empresa" id="empresa" placeholder="Empresa">
+              
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo">
+             
+                <input type="text" name="whatsapp" id="whatsapp" placeholder="Whatsapp">
+              
+                <input type="text" name="Segmento" id="Segmento" placeholder="Segmento">
+              </div>
+              
+              <div class="termos">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Eu li e concordo com os <a href="#">termos de uso</a></label>
+              </div>
+              
+              <div class="botao">
+                <button>Garantir minha vaga</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="col">
+            <div class="powered">
+              <h3>UM EVENTO BY</h3>
+              <img src="./dist/images/logo-huggy-rodape.png" alt="Huggy">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="grid texto">
+          <div class="col">
+            <p>A plataforma que traz o calor humano no atendimento digital agora apresenta mais uma trilha completa de conteúdo para otimizar as relações entre empresas e consumidores.
+            </p>  
+          </div>
+          <div class="col">
+            <p>Toda nossa expertise em conversas via canais digitais à sua disposição para facilitar o relacionamento, as vendas e o suporte oferecido aos consumidores e pessoas interessadas na sua empresa.</p>
+          </div>
+        </div>
       </div>
-    </footer>
+      
+
+      <div class="grid logos">
+        <div class="col">
+          <div class="logos-footer">
+            <div class="logo-footer-instagram">
+              <img src="./dist/images/logo-banner.png" alt="Instagram meu negócio">
+            </div>
+            <div class="logo-footer-huggy">
+              <img src="./dist/images/logo-huggy.png" alt="Huggy">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="copyright">
+            <p>© 2021 Huggy - Todos os direitos reservados</p>
+          </div>
+        </div>
+      </div>
+      </footer>
     
     
     

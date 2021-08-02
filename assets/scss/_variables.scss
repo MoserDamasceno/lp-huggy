@@ -1,5 +1,39 @@
+$base-convert: 0.8; // 0.7; // 1920 to 1360
+$grid-container-width: 1180px;
+
 $breakpoints: (
   small: 0px,
   medium: 640px,
   large: 1024px,
 );
+
+$orange: #FFBB47;
+$dark-orange: #FF6617;
+$dark: #161616;
+$purple:  #B818F1;
+$yellow:  #FFBB47;
+
+@mixin button(){
+  @content;
+  background: linear-gradient(266.57deg, #FC5362 -9.79%, #FF6617 109.09%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12rem;
+  border: 0;
+  display: inline-block;
+  
+  &:hover{
+      background: $purple;
+  }
+}
+
+@function c($value) {
+  @return calc(#{$value} * #{$base-convert});
+}
+
+@function col($number) {
+  @return $grid-container-width / 12 * $number;
+}

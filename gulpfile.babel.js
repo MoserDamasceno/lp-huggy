@@ -55,7 +55,7 @@ const compileImages = () => {
 }
   
   const watchMarkup = () => {
-    gulp.watch(['index.html'], browserSyncReload);
+    gulp.watch(['*.html'], browserSyncReload);
   }
   
   const watchScripts = () => {

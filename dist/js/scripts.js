@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(e){document.addEventListener("scroll",function(e){var t=window.scrollY,d=document.querySelector("#header");120<t?d.classList.add("fixed"):d.classList.remove("fixed")})});
