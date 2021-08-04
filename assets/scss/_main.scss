@@ -38,7 +38,7 @@ a {
     top: 0;
     width: 100%;
     left: 0;
-    padding: 80rem 0 15rem;
+    padding: 20rem 0 15rem;
     z-index: 1000;
     
     .grid{
@@ -132,8 +132,12 @@ main{
         background-position: center;
         background-repeat: no-repeat;
         // height: calc(100vh - 300px);
-        padding: 200rem 0 150rem;
+        padding: 120rem 0 80rem;
         position: relative;
+        overflow: hidden;
+        min-height: calc( 100vh - 180rem);
+        background: black;
+
 
         #video-bg {
             position: absolute;
@@ -143,6 +147,12 @@ main{
             min-width: 100%;
             min-height: 100%;
             z-index: 1;
+            opacity: 0.8;
+
+
+            @include small-only() {
+                // display: none;  
+            }
         }
         
         @include small-only() {
@@ -309,7 +319,6 @@ main{
                         
                         button{
                             @include button();
-                            font-size: 16rem;
                         }
                     }
                     
@@ -329,12 +338,12 @@ main{
         }
         
         .logo-huggy{
-            padding: 160rem 0 0;
+            padding: 80rem 0 0;
             text-align: center;
         }
     } /** Fim Seção Banner */
     
-    #relacionamento{
+    #sobre{
         background-image: url('../images/bg-conheca.png');
         background-size: cover;
         background-position: center;
@@ -428,7 +437,6 @@ main{
                 .botao{
                     a{
                         @include button();
-                        font-size: 20rem;
                     }
                 }
                 
@@ -491,9 +499,19 @@ main{
             line-height: 1.4;
             margin-bottom: 40rem;
         }
+
+        img{
+            transform: rotate3d(0,0,0,0deg) rotate(0deg);
+            transition: transform .4s ease;
+            border-radius: .5em;
+            
+            &:hover {
+                transform: rotate3d(15,-.866,0,15deg) rotate(3deg);
+            }
+        }
     }
     
-    #palestrantes{
+    #especialistas{
         background-image: url('../images/bg-palestrantes.jpg');
         background-size: cover;
         background-position: center;
@@ -614,6 +632,7 @@ main{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         
         .grid-container{
             max-width: col(8);
@@ -825,10 +844,16 @@ main{
 
             @include small-only() {
                 padding: 50px 20px;
+                
             }
             
             .grid{
                 align-items: center;
+
+                .col{
+                    padding-left: col(1);
+                }
+                    
             }
             
             h3{
@@ -884,7 +909,7 @@ main{
         }
     }
     
-    #indicacao{
+    #indique{
         padding: 110rem 0;
 
         background-image: url('../images/bg-indique.jpg');
@@ -994,8 +1019,6 @@ main{
                 
                 a{
                     @include button();
-                    font-size: 20rem;
-                    line-height: 1.5;
                 }
             }
         }
@@ -1013,6 +1036,10 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    &.footer-evento{
+        background: black;
+    }
     
     @include small-only() {
         padding: 100rem 20rem;
@@ -1110,7 +1137,6 @@ main{
             text-align: center;
             button{
                 @include button();
-                font-size: 22rem;
             }
         }
     }
@@ -1213,7 +1239,13 @@ main{
 }
 
 #banner-parabens{
+    background-image: url('../images/bg-banner-parabens.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: black;
+
+
     color: white;
     text-align: center;
     padding: 90rem 0 200rem;
@@ -1315,7 +1347,12 @@ main{
 }
 
 #banner-evento{
+    background-image: url('../images/bg-banner-evento.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: black;
+
     color: white;
     padding: 80rem 0 120rem;
     
@@ -1431,6 +1468,7 @@ main{
                 font-size: 16rem;
                 line-height: 1.4;
                 margin-bottom: 10rem;
+                font-weight: 700;
             }
             .video{
                 margin-bottom: 10rem;
@@ -1446,6 +1484,12 @@ main{
 
 #teste-gatuito{
     padding: 80rem 0;
+
+    background-image: url('../images/bg-secao-2-evento.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: whitek;
     
     .grid{
         align-items: center;
@@ -1492,8 +1536,6 @@ main{
     .botao{
         a{
             @include button();
-            display: inline-block;
-            margin-bottom: 10px;
         }
     }
 }

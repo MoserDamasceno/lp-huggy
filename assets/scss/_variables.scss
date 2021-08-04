@@ -15,13 +15,14 @@ $yellow:  #FFBB47;
 
 @mixin button(){
   @content;
+  font-family: 'Noto Sans';
   background: linear-gradient(266.57deg, #FC5362 -9.79%, #FF6617 109.09%);
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 10px 20px;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12rem;
+  font-size: 18rem;
   border: 0;
   display: inline-block;
   
