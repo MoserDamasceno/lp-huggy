@@ -124,6 +124,17 @@ a {
 }
 
 main{
+
+    section.container{
+        opacity: 0;
+        transition: 1000ms ease opacity;
+
+        &.is-inViewport{
+            opacity: 1;
+        }
+    }
+
+
     
     /** Seção Banner */
     #banner{
