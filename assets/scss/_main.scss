@@ -1238,6 +1238,20 @@ main{
     
 }
 
+@keyframes downup {
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    50%{
+        transform: translate(0, 100%);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 #banner-parabens{
     background-image: url('../images/bg-banner-parabens.jpg');
     background-position: top;
@@ -1292,6 +1306,10 @@ main{
                 border-top:  20px solid $yellow;
                 
                 border-radius: 3px;
+
+                animation: downup 2s ease infinite;
+
+                
             }
         }
     }
