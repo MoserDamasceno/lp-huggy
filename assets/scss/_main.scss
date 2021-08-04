@@ -158,12 +158,23 @@ main{
             min-width: 100%;
             min-height: 100%;
             z-index: 1;
-            opacity: 0.8;
+            opacity: 0.3;
 
 
-            @include small-only() {
-                // display: none;  
-            }
+        }
+
+        #iluminacao{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 2;
+            background-image: url('../images/bg-banner-topo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         
         @include small-only() {
