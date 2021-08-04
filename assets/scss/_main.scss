@@ -146,8 +146,14 @@ main{
         padding: 120rem 0 80rem;
         position: relative;
         overflow: hidden;
-        min-height: calc( 100vh - 180rem);
+        min-height: calc( 100vh - 200rem);
         background: black;
+        
+        @include bigscreen-up(){
+            padding: 250rem 0 120rem;
+            min-height: calc( 100vh - 370rem);
+
+        }
 
 
         #video-bg {
@@ -362,6 +368,11 @@ main{
         .logo-huggy{
             padding: 80rem 0 0;
             text-align: center;
+            
+            @include bigscreen-up(){
+                padding: 150rem 0 0;
+                
+            }
         }
     } /** Fim Seção Banner */
     
