@@ -917,6 +917,7 @@ main{
             font-weight: 700;
             font-size: 30rem;
             margin-bottom: 40rem;
+            line-height: 1.4;
             
             @include small-only() {
                 font-size: 20rem;
